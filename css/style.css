@@ -1,7 +1,16 @@
+:root
+{
+  --primary-color: #fbff00;
+  --secondary-color: #8e9e00;
+  --background-color-contrast: rgb(166, 185, 54);
+  --background-color: #00268f;
+
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #040000;
-  background-color: #63f74f;
+  background-color: var(--background-color);
 }
 
 .layout_padding {
@@ -70,8 +79,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#63f74f));
-  background: linear-gradient(to bottom, transparent, transparent, #63f74f);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), tovar((--primary-colo)r));
+  background: linear-gradient(to bottom, transparent, transparent, var(--primary-color));
 }
 
 .sub_page .hero_area {
@@ -83,7 +92,7 @@ body {
 }
 
 .header_section {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   position: relative;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 28.5% 100%, 26.5% 86%, 0 84%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 100%, 28.5% 100%, 26.5% 86%, 0 84%, 0 0);
@@ -119,12 +128,12 @@ a:focus {
 a:hover,
 a:focus {
   color: initial;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
+}primary
+primary
+primary
+primary
+primary
+primary none;
           box-shadow: none;
 }
 
@@ -277,7 +286,7 @@ a:focus {
 }
 
 .slider_section .slider_heading h2 span {
-  color: #63f74f;
+  color: var(--secondary-color);
 }
 
 .slider_section .detail-box h1 {
@@ -374,7 +383,7 @@ a:focus {
   background-repeat: no-repeat;
   background-size: 8px;
   background-position: center;
-  background-color: #63f74f;
+  background-color: #bbe600;
   border-radius: 100%;
 }
 
@@ -418,7 +427,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #63f74f;
+  color: var(--primary-color);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -427,7 +436,7 @@ a:focus {
   border: none;
   width: 1px;
   height: 200px;
-  background-color: #63f74f;
+  background-color: var(--primary-color);
   margin: 2rem 0;
 }
 
@@ -682,7 +691,7 @@ a:focus {
   height: 75px;
   border-radius: 100%;
   text-align: center;
-  background-color: #63f74f;
+  background-color: var(--primary-color);
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
